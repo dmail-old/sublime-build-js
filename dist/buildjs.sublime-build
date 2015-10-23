@@ -1,0 +1,4 @@
+{
+	"cmd": ["sublime-build-js", "$file"],
+	"selector": "source.js"
+}

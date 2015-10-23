@@ -1,0 +1,22 @@
+{
+	"name": "sublime-build-js",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"bin": {
+		"sublime-build-js": "./bin/build"
+	},
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"system-test": "git+https://github.com/dmail/system-test",
+		"system-platform": "git+https://github.com/dmail/system-platform"
+	},
+	"scripts": {
+		"test": "system-test"
+	},
+	"repository": {
+	    "type": "git",
+	    "url": "https://github.com/dmail/sublime-build-js"
+	}
+}
