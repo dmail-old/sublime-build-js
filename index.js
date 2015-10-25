@@ -1,14 +1,16 @@
-var path = require('path');
-var runPlatform = require('system-platform/run.js');
-var runTest = require('system-test/run.js');
+//var path = require('path');
 
 function run(filePath){
+	filePath = filePath.replace(/\\/g, '/');
+
 	if( filePath.indexOf('/test/') > -1 ){
-		runTest(filePath);
+		console.log('test', filePath);
+		require('system-test/bin/run');
 	}
 	else{
-		runPlatform(filePath);
+		console.log('platform', filePath);
+		require('system-platform/bin/run');
 	}
-
 }
+
 module.exports = run;
